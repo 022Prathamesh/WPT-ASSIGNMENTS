@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    header {
+        background: #333;
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #4caf50 3px solid;
+    }
+    
+    header h1 {
+        float: left;
+        margin: 0;
+    }
+    
+    nav ul {
+        float: right;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    
+    #showcase {
+        min-height: 600px;
+        background: url('https://cdnb.artstation.com/p/assets/images/images/035/756/971/large/enes-cinar-amr21vettel.jpg?1615825428') no-repeat center center/cover;
+        text-align: center;
+        color: #fff;
+    }
+    
+    #showcase h1 {
+        margin-top: 100px;
+    }
+    
+    #news {
+        padding: 20px 0;
+    }
+    
+    .news-article {
+        border-bottom: #ccc 1px solid;
+        margin-bottom: 20px;
+    }
+    
+    .news-article h3 {
+        color: #4caf50;
+    }
+    
+    #schedule table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    #schedule th, #schedule td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Formula 1</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="schedule.html">Race Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to Formula 1 : Home of Champoins</h1>
+            <p>The pinnacle of MotorSports.</p>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="news-article">
+                <h3>Article Title</h3>
+                <p>Summary of the news article.</p>
+            </div>
+            <!-- Add more news articles as needed -->
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <h2>Race Schedule</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>May 1, 2024</td>
+                    <td>Track Name</td>
+                    <td>Country Name</td>
+                </tr>
+                <!-- Add more race schedule rows as needed -->
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Formula 1</p>
+        </div>
+    </footer>
+</body>
+</html>

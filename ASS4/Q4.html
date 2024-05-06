@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Highlight Bold Words</title>
+<style>
+  .bold-highlight {
+    font-weight: bold;
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<p id="paragraph">We have just started this section for the users (beginner to intermediate) who want to work with various JavaScript problems and write scripts online to test their JavaScript skill.</p>
+
+<p>Hover over <a href="#" id="highlightLink">this link</a> to highlight the bold words.</p>
+
+<script>
+document.getElementById("highlightLink").addEventListener("mouseover", highlightBoldWords);
+
+function highlightBoldWords() {
+  var paragraph = document.getElementById("paragraph");
+  var words = paragraph.innerHTML.split(" ");
+  
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].startsWith("<b>") && words[i].endsWith("</b>")) {
+      words[i] = "<span class='bold-highlight'>" + words[i] + "</span>";
+    }
+  }
+  
+  paragraph.innerHTML = words.join(" ");
+}
+</script>
+
+</body>
+</html>
